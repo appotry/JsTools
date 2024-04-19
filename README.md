@@ -31,6 +31,8 @@
 ## CSDN
 
 > 只需轻轻一点，就去掉 CSDN 烦人的关键字搜索
+>
+> 一次去不干净就多点击几次
 
 ![](https://raw.githubusercontent.com/appotry/JsTools/main/media/pic/csdn1.png)
 
