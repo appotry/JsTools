@@ -15,3 +15,11 @@
 ![](/media/pic/zhihu1.png)
 
 ![](/media/pic/zhihu2.png)
+
+## 关于作者
+
+> 作者的博客 [夜法之书](https://blog.17lai.site/) 欢迎光临
+
+## License
+
+> GPL V3

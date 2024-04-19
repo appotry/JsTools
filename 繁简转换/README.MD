@@ -5,3 +5,14 @@
 经常访问到一些没有自带中文繁简转换的网站，虽然也认识，但是阅读感要累很多！
 
 由于最近一直在更新修改 [Hexo主题](https://blog.17lai.site/)，对 JS 熟悉了不少，如果就写了这个
+
+![](/media/pic/translate.png)
+
+
+## 关于作者
+
+> 作者的博客 [夜法之书](https://blog.17lai.site/) 欢迎光临
+
+## License
+
+> GPL V3

@@ -15,4 +15,5 @@
 > 作者的博客 [夜法之书](https://blog.17lai.site/) 欢迎光临
 
 ## License
-    GPL V3. 
+
+> GPL V3
