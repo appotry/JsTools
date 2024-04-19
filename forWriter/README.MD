@@ -1,5 +1,8 @@
 ## CSDN
 
+- 仓库地址 [Github](https://github.com/appotry/JsTools) 
+- 作者 [夜法之书](https://blog.17lai.site/)
+
 > 只需轻轻一点，就去掉 CSDN 烦人的关键字搜索
 
 ![](https://raw.githubusercontent.com/appotry/JsTools/main/media/pic/csdn1.png)

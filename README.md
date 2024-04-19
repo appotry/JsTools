@@ -4,6 +4,9 @@
 >
 > 自用，以及给所有创作者们！
 
+- 仓库地址 [Github](https://github.com/appotry/JsTools) 
+- 作者 [夜法之书](https://blog.17lai.site/)
+
 ## 脚本列表
 
 - [网页繁简转换](/繁简转换/README.MD) 给所有网页添加繁简转换功能！

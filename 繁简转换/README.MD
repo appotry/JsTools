@@ -1,5 +1,8 @@
 ## 网页繁简转换外挂
 
+- 仓库地址 [Github](https://github.com/appotry/JsTools) 
+- 作者 [夜法之书](https://blog.17lai.site/)
+
 > **给所有网页添加繁简转换功能**！
 
 经常访问到一些没有自带中文繁简转换的网站，虽然也认识，但是阅读感要累很多！
