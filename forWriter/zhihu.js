@@ -4,6 +4,7 @@
 // @version      2024-04-19
 // @description  1，去掉知乎链接跳转，还原原始链接,2，去掉知乎关键字搜索
 // @author       夜法之书
+// @license      GPL V3
 // @match        https://www.zhihu.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=zhihu.com
 // @grant        none

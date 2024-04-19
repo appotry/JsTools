@@ -4,6 +4,7 @@
 // @version      1.0.0
 // @description  给浏览器添加繁简转换功能。默认设置为简体版本，推荐中国区以及简体用户选择这个版本
 // @author       夜法之书
+// @license      GPL V3
 // @include      http://*
 // @include      https://*
 // @grant        none

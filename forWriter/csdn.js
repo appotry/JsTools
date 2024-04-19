@@ -4,6 +4,7 @@
 // @version      2024-04-19
 // @description  去掉 csdn 内置关键词搜索
 // @author       夜法之书 
+// @license      GPL V3
 // @match        https://blog.csdn.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=csdn.net
 // @grant        none
