@@ -8,6 +8,8 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=csdn.net
 // @grant        none
 // @run-at       document-end
+// @updateURL   https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/csdn.js
+// @downloadURL https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/csdn.js
 // ==/UserScript==
 
 (function() {

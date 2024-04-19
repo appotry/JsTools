@@ -9,6 +9,8 @@
 // @grant        none
 // @include      https://www.zhihu.com/*
 // @include      https://zhuanlan.zhihu.com/*
+// @updateURL   https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/zhihu.js
+// @downloadURL https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/zhihu.js
 // ==/UserScript==
 
 (function() {

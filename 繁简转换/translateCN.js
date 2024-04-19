@@ -8,8 +8,8 @@
 // @include      https://*
 // @grant        none
 // @run-at       document-end
-// @downloadURL
-// @updateURL
+// @updateURL   https://raw.githubusercontent.com/appotry/JsTools/main/%E7%B9%81%E7%AE%80%E8%BD%AC%E6%8D%A2/translateCN.js
+// @downloadURL https://raw.githubusercontent.com/appotry/JsTools/main/%E7%B9%81%E7%AE%80%E8%BD%AC%E6%8D%A2/translateCN.js
 // ==/UserScript==
 
 (function() {
