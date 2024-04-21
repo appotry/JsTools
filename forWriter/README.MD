@@ -1,3 +1,11 @@
+
+## 脚本列表
+
+- [网页繁简转换](https://github.com/appotry/JsTools/blob/main/繁简转换/README.MD) 给所有网页添加繁简转换功能！
+- [zhihu 创作助手](https://github.com/appotry/JsTools/blob/main/forWriter/README.MD) 1，去掉知乎链接跳转，还原原始链接。 2，去掉知乎关键字搜索
+- [CSDN 创作助手](https://github.com/appotry/JsTools/blob/main/forWriter/README.MD) 只需轻轻一点，就去掉 CSDN 烦人的关键字搜索
+- [juejin 创作助手](https://github.com/appotry/JsTools/blob/main/forWriter/README.MD)  1，去掉知乎链接跳转，还原原始链接。2，去掉 复制代码 文字
+
 ## CSDN
 
 - 仓库地址 [Github](https://github.com/appotry/JsTools) 
