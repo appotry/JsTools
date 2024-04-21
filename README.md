@@ -13,7 +13,7 @@
 - [zhihu 创作助手](/forWriter/README.MD) 1，去掉知乎链接跳转，还原原始链接。 2，去掉知乎关键字搜索
 - [CSDN 创作助手](/forWriter/README.MD) 只需轻轻一点，就去掉 CSDN 烦人的关键字搜索
 
-## 安装 Tampermonkey
+## Tampermonkey 安装和使用
 
 ### 在 Chrome 上安装 Tampermonkey
 
@@ -31,7 +31,7 @@
 
 - 您可以在其他支持 Tampermonkey 的浏览器上，如 Edge 或 Safari 上查找适用于 Tampermonkey 的扩展程序，并按照它们的指示进行安装。
 
-### 2. 安装用户脚本插件
+### 安装用户脚本插件
 
 1. 打开您想要安装的用户脚本插件的下载链接。
 2. Tampermonkey 会检测到页面上的用户脚本，并显示一个安装提示框。
