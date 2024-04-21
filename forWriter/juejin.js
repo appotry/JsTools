@@ -9,8 +9,8 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=juejin.cn
 // @grant        none
 // @include      https://juejin.cn/*
-// @downloadURL 
-// @updateURL 
+// @downloadURL  https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/juejin.js
+// @updateURL    https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/juejin.js
 // ==/UserScript==
 
 (function() {

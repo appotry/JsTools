@@ -48,6 +48,16 @@
 
 ![](https://raw.githubusercontent.com/appotry/JsTools/main/media/pic/zhihu2.png)
 
+## juejin
+
+> - 1，去掉知乎链接跳转，还原原始链接,
+>
+> - 2，去掉 复制代码 文字
+
+![](https://raw.githubusercontent.com/appotry/JsTools/main/media/pic/juejin1.png)
+
+![](https://raw.githubusercontent.com/appotry/JsTools/main/media/pic/juejin2.png)
+
 ## 关于作者
 
 > 作者的博客 [夜法之书](https://blog.17lai.site/) 欢迎光临
