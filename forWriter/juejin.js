@@ -2,7 +2,7 @@
 // @name         juejin 创作助手
 // @namespace    https://blog.17lai.site
 // @version      1.0.0
-// @description  1，去掉juejin链接跳转，还原原始链接 2, 去掉 取值代码 文字
+// @description  1，去掉juejin链接跳转，还原原始链接 2, 去掉 复制代码 文字
 // @author       夜法之书
 // @license      GPL V3
 // @match        https://juejin.cn/*
