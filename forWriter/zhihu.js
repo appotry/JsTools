@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         zhihu 创作助手
 // @namespace    https://blog.17lai.site
-// @version      2024-04-19
+// @version      1.0.0
 // @description  1，去掉知乎链接跳转，还原原始链接,2，去掉知乎关键字搜索
 // @author       夜法之书
 // @license      GPL V3
@@ -102,7 +102,7 @@
     // 函数：从跳转链接中获取原始链接
     function redirecAllUrl(redirectUrl) {
         // 查找页面中所有带有指定类名的链接
-        var links = document.querySelectorAll('a.wrap.external[href^="https://link.zhihu.com"]');
+        var links = document.querySelectorAll('a[href^="https://link.zhihu.com"]');
 
         // 遍历所有链接
         links.forEach(function(link) {
