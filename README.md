@@ -15,23 +15,42 @@
 
 ## Tampermonkey 安装和使用
 
-### 在 Chrome 上安装 Tampermonkey
+> Tampermonkey 是一款免费的浏览器扩展和最出名的用户脚本管理器,它可以让你在浏览器中自定义网页的行为和外观。通过安装 Tampermonkey,你可以使用来自世界各地的开发者提供的上千个脚本,也可以创建和运行自己的脚本。
+
+### 🌐在 Chrome 上安装 Tampermonkey
 
 1. 打开 Chrome 浏览器。
 2. 访问 [Tampermonkey Chrome Web 商店页面](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)。
 3. 点击“添加至 Chrome”按钮，然后再次点击“添加扩展程序”确认安装。
 
-### 在 Firefox 上安装 Tampermonkey
+### 🦊在 Firefox 上安装 Tampermonkey
 
 1. 打开 Firefox 浏览器。
 2. 访问 [Tampermonkey Firefox Add-ons 页面](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)。
 3. 点击“Add to Firefox”按钮，然后再次点击“Add”确认安装。
+
+### 📱 移动设备
+
+Tampermonkey 也可以在移动浏览器上使用:
+
+#### Android
+
+安装 Tampermonkey 辅助应用
+在你的 Android 浏览器中启用 Tampermonkey
+
+#### iOS
+
+安装支持 Tampermonkey 的第三方浏览器,如 Dolphin
 
 ### 在其他浏览器上安装 Tampermonkey
 
 - 您可以在其他支持 Tampermonkey 的浏览器上，如 Edge 或 Safari 上查找适用于 Tampermonkey 的扩展程序，并按照它们的指示进行安装。
 
 ### 安装用户脚本插件
+
+安装完 Tampermonkey 后,你可以安装各种用户脚本来扩展浏览器功能了。在任何提供用户脚本的网站上,点击"安装"按钮即可自动将脚本添加到 Tampermonkey 中。如果网页上没有"安装"按钮,你也可以通过复制脚本代码并在 Tampermonkey 的"添加新脚本"中粘贴代码来手动安装。
+
+就是这样!现在你已经可以体验由全球开发者提供的各种有用的用户脚本,或者自己动手创建脚本来定制网页体验了。
 
 1. 打开您想要安装的用户脚本插件的下载链接。
 2. Tampermonkey 会检测到页面上的用户脚本，并显示一个安装提示框。
