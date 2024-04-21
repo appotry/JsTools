@@ -13,7 +13,31 @@
 - [zhihu 创作助手](/forWriter/README.MD) 1，去掉知乎链接跳转，还原原始链接。 2，去掉知乎关键字搜索
 - [CSDN 创作助手](/forWriter/README.MD) 只需轻轻一点，就去掉 CSDN 烦人的关键字搜索
 
-### 网页繁简转换外挂
+## 安装 Tampermonkey
+
+### 在 Chrome 上安装 Tampermonkey
+
+1. 打开 Chrome 浏览器。
+2. 访问 [Tampermonkey Chrome Web 商店页面](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)。
+3. 点击“添加至 Chrome”按钮，然后再次点击“添加扩展程序”确认安装。
+
+### 在 Firefox 上安装 Tampermonkey
+
+1. 打开 Firefox 浏览器。
+2. 访问 [Tampermonkey Firefox Add-ons 页面](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)。
+3. 点击“Add to Firefox”按钮，然后再次点击“Add”确认安装。
+
+### 在其他浏览器上安装 Tampermonkey
+
+- 您可以在其他支持 Tampermonkey 的浏览器上，如 Edge 或 Safari 上查找适用于 Tampermonkey 的扩展程序，并按照它们的指示进行安装。
+
+### 2. 安装用户脚本插件
+
+1. 打开您想要安装的用户脚本插件的下载链接。
+2. Tampermonkey 会检测到页面上的用户脚本，并显示一个安装提示框。
+3. 点击安装按钮，Tampermonkey 将会自动安装用户脚本。
+
+## 网页繁简转换外挂
 
 > **给所有网页添加繁简转换功能**！
 
@@ -38,7 +62,7 @@
 
 ![](https://raw.githubusercontent.com/appotry/JsTools/main/media/pic/csdn2.png)
 
-### zhihu
+## zhihu
 
 > - 1，去掉知乎链接跳转，还原原始链接,
 >
