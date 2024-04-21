@@ -6,8 +6,9 @@
 >
 > 有什么建议可以留言或者提交 [issue](https://github.com/appotry/JsTools/issues)
 
-- 仓库地址 [Github](https://github.com/appotry/JsTools) 
-- 作者 [夜法之书](https://blog.17lai.site/)
+> - 仓库地址 [Github](https://github.com/appotry/JsTools) 
+>
+> - 作者 [夜法之书](https://blog.17lai.site/)
 
 ## 脚本列表
 
