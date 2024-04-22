@@ -60,6 +60,8 @@ Tampermonkey 也可以在移动浏览器上使用:
 2. Tampermonkey 会检测到页面上的用户脚本，并显示一个安装提示框。
 3. 点击安装按钮，Tampermonkey 将会自动安装用户脚本。
 
+> 注意：下面脚本介绍使用的图床为 github！ 如果看不到来自 <https://raw.githubusercontent.com/> 的图片，自己想办法！
+
 ## 网页繁简转换外挂
 
 > **给所有网页添加繁简转换功能**！

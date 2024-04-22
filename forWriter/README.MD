@@ -10,6 +10,8 @@
 - [CSDN 创作助手](https://github.com/appotry/JsTools/blob/main/forWriter/README.MD) 只需轻轻一点，就去掉 CSDN 烦人的关键字搜索
 - [juejin 创作助手](https://github.com/appotry/JsTools/blob/main/forWriter/README.MD)  1，去掉知乎链接跳转，还原原始链接。2，去掉 复制代码 文字
 
+> 注意：下面脚本介绍使用的图床为 github！ 如果看不到来自 <https://raw.githubusercontent.com/> 的图片，自己想办法！
+
 ## CSDN
 
 > 只需轻轻一点，就去掉 CSDN 烦人的关键字搜索
