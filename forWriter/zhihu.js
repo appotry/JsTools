@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         zhihu 创作助手
 // @namespace    https://blog.17lai.site
-// @version      1.0.0
+// @version      1.0.1
 // @description  1，去掉知乎链接跳转，还原原始链接,2，去掉知乎关键字搜索
 // @author       夜法之书
 // @license      GPL V3
@@ -10,8 +10,8 @@
 // @grant        none
 // @include      https://www.zhihu.com/*
 // @include      https://zhuanlan.zhihu.com/*
-// @updateURL   https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/zhihu.js
-// @downloadURL https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/zhihu.js
+// @downloadURL https://update.greasyfork.org/scripts/492937/zhihu%20%E5%88%9B%E4%BD%9C%E5%8A%A9%E6%89%8B.user.js
+// @updateURL https://update.greasyfork.org/scripts/492937/zhihu%20%E5%88%9B%E4%BD%9C%E5%8A%A9%E6%89%8B.meta.js
 // ==/UserScript==
 
 (function() {
@@ -68,6 +68,7 @@
     // 点击悬浮图标时运行 replaceLinks 函数
     floatingIcon.addEventListener('click', function() {
         replaceLinks();
+        replaceZhidaLinks();
         redirecAllUrl();
     });
 
@@ -83,6 +84,33 @@
 
             // 检查 href 属性值是否以特定字符串开头
             if (hrefValue && hrefValue.startsWith("https://www.zhihu.com/search")) {
+                // 获取当前 <a> 标签的文本内容
+                var textContent = links[i].innerText;
+
+                // 创建一个新的文本节点
+                var textNode = document.createTextNode(textContent);
+
+                // 将文本节点插入到 <a> 标签之前
+                links[i].parentNode.insertBefore(textNode, links[i]);
+
+                // 移除当前 <a> 标签
+                links[i].parentNode.removeChild(links[i]);
+            }
+        }
+    }
+
+    // 替换链接函数
+    function replaceZhidaLinks() {
+        // 查找页面中所有的 <a> 标签
+        var links = document.getElementsByTagName('a');
+
+        // 遍历所有的 <a> 标签
+        for (var i = 0; i < links.length; i++) {
+            // 获取当前 <a> 标签的 href 属性值
+            var hrefValue = links[i].getAttribute('href');
+
+            // 检查 href 属性值是否以特定字符串开头
+            if (hrefValue && hrefValue.startsWith("https://zhida.zhihu.com/search")) {
                 // 获取当前 <a> 标签的文本内容
                 var textContent = links[i].innerText;
 
