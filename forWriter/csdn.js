@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CSDN 创作助手
 // @namespace    https://blog.17lai.site
-// @version      1.0.0
+// @version      1.0.1
 // @description  去掉 csdn 内置关键词搜索
 // @author       夜法之书 
 // @license      GPL V3
@@ -67,9 +67,28 @@
     // 点击悬浮图标时运行 replaceLinks 函数
     floatingIcon.addEventListener('click', function() {
         replaceLinks();
+        replaceSpans();
     });
 
-
+    function replaceSpans() {
+        // 查找页面中所有具有 class 为 'words-blog hl-git-1' 的 <span> 标签
+        var spans = document.querySelectorAll('span.words-blog');
+    
+        // 遍历所有符合条件的 <span> 标签
+        for (var i = 0; i < spans.length; i++) {
+            // 获取当前 <span> 标签的文本内容
+            var textContent = spans[i].innerText;
+    
+            // 创建一个新的文本节点
+            var textNode = document.createTextNode(textContent);
+    
+            // 将文本节点插入到 <span> 标签之前
+            spans[i].parentNode.insertBefore(textNode, spans[i]);
+    
+            // 移除当前 <span> 标签
+            spans[i].parentNode.removeChild(spans[i]);
+        }
+    }
 
     function replaceLinks() {
         // 查找页面中所有的 <a> 标签
