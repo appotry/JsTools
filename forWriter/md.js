@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         markdown整理
 // @namespace    https://blog.17lai.site
-// @version      1.0.0
+// @version      1.0.1
 // @description  去掉影响 markdown 复制编辑的元素
 // @author       夜法之书
 // @license      GPL V3
@@ -68,6 +68,7 @@
     // 点击悬浮图标时运行 replaceLinks 函数
     floatingIcon.addEventListener('click', function() {
         removeNotionHeaderAnchors();
+        hideCodeLangElements();
     });
 
     function removeNotionHeaderAnchors() {
@@ -86,6 +87,14 @@
 
             // 移除当前 <a> 标签
             parentElement.removeChild(anchors[i]);
+        }
+    }
+
+    // 隐藏 .code_lang 元素 。 theme hexo matery
+    function hideCodeLangElements() {
+        var codeLangElements = document.querySelectorAll('.code_lang');
+        for (var i = 0; i < codeLangElements.length; i++) {
+            codeLangElements[i].style.display = 'none';
         }
     }
 
