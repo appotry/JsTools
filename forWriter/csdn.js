@@ -72,7 +72,7 @@
 
     function replaceSpans() {
         // 查找页面中所有具有 class 为 'words-blog hl-git-1' 的 <span> 标签
-        var spans = document.querySelectorAll('span.words-blog');
+        var spans = document.querySelectorAll('span.words-blog, span.hl-1');
     
         // 遍历所有符合条件的 <span> 标签
         for (var i = 0; i < spans.length; i++) {
