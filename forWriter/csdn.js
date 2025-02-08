@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CSDN 创作助手
 // @namespace    https://blog.17lai.site
-// @version      1.0.1
+// @version      1.0.2
 // @description  去掉 csdn 内置关键词搜索
 // @author       夜法之书 
 // @license      GPL V3
