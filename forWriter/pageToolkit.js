@@ -1,12 +1,14 @@
 // ==UserScript==
-// @name         Page Actions Toolkit - Draggable UI + Image Unlink + Lazy Remove (stable)
-// @namespace    https://example.local/
-// @version      1.4.2
-// @description  可拖动工具条（位置持久化）+ 一键去除包裹图片的 <a> + 一键移除 lazyload（可扩展动作注册）。Alt+U/Alt+L 快捷键。@match all sites
-// @author       You
+// @name         Page Actions Toolkit - Draggable UI + Image Unlink + Lazy Remove (with Close Button)
+// @namespace    https://blog.17lai.site
+// @version      1.1.0
+// @description  可拖动工具条（位置持久化）+ 一键去除包裹图片的 <a> + 一键移除 lazyload（可扩展动作注册）。含关闭按钮（本次会话关闭，刷新后恢复）。Alt+U/Alt+L 快捷键。@match all sites
+// @author       夜法之书
 // @match        *://*/*
 // @grant        none
 // @run-at       document-idle
+// @downloadURL  https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/pageToolkit.js
+// @updateURL    https://raw.githubusercontent.com/appotry/JsTools/main/forWriter/pageToolkit.js
 // ==/UserScript==
 
 (function () {
@@ -26,6 +28,12 @@
     DEFAULT_POS: { right: 16, top: 16 }
   };
 
+  /* If previously closed in this page session, don't create UI again */
+  if (window.__page_actions_closed) {
+    // nothing to do — respect in-memory close flag
+    return;
+  }
+
   /* ========== Helpers: safe appendChild (防护) ========== */
   function safeAppend(parent, nodeOrHtml, label) {
     try {
@@ -38,14 +46,12 @@
         return;
       }
       if (typeof nodeOrHtml === 'string') {
-        // try parse as HTML fragment
         try {
           const range = document.createRange();
           const frag = range.createContextualFragment(nodeOrHtml);
           parent.appendChild(frag);
           return;
         } catch (e) {
-          // fallback to text node
           parent.appendChild(document.createTextNode(nodeOrHtml));
           return;
         }
@@ -493,6 +499,32 @@
       });
     }
 
+    /* ====== CLOSE BUTTON (本次会话关闭，刷新恢复) ====== */
+    const closeBtn = document.createElement('button');
+    closeBtn.id = 'page-actions-close';
+    closeBtn.type = 'button';
+    closeBtn.title = 'Close (hide for this page session; refresh to restore)';
+    closeBtn.innerHTML = '✖';
+    Object.assign(closeBtn.style, {
+      background: 'transparent', color: '#666', border: 'none', padding: '6px 8px', borderRadius: '6px',
+      cursor: 'pointer', fontSize: '14px', lineHeight: '1'
+    });
+    closeBtn.addEventListener('mouseenter', () => { closeBtn.style.color = '#222'; });
+    closeBtn.addEventListener('mouseleave', () => { closeBtn.style.color = '#666'; });
+    closeBtn.addEventListener('click', (e) => {
+      try {
+        // set in-memory flag — will not persist across refresh
+        window.__page_actions_closed = true;
+        // hide the UI immediately
+        const el = document.getElementById('page-actions-toolkit');
+        if (el) el.style.display = 'none';
+        showToast('Page Actions hidden for this session');
+      } catch (err) {
+        console.error('closeBtn click error', err);
+      }
+    });
+    /* ====== END CLOSE BUTTON ====== */
+
     const panel = document.createElement('div');
     panel.id = 'page-actions-panel';
     Object.assign(panel.style, {
@@ -519,7 +551,7 @@
       pointerEvents: 'none'
     });
 
-    // Ensure default actions are registered (idempotent)
+    // ensure actions
     if (!Actions.getAction('unlink_images')) {
       Actions.addAction({
         key: 'unlink_images',
@@ -607,8 +639,10 @@
     const wrapper = document.createElement('div');
     wrapper.style.display = 'flex';
     wrapper.style.alignItems = 'center';
+    // order: mainBtn, quickBtn, closeBtn
     wrapper.appendChild(mainBtn);
     if (quickBtn) wrapper.appendChild(quickBtn);
+    wrapper.appendChild(closeBtn); // <-- close button included in UI
 
     safeAppend(root, wrapper, 'wrapper');
     safeAppend(root, panel, 'panel');
@@ -714,6 +748,7 @@
   /* ========== Init ========== */
   function init() {
     try {
+      if (window.__page_actions_closed) return; // safety: respect in-memory close flag
       createUI();
       registerShortcut();
       setupObserver();
